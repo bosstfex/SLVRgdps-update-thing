@@ -6,12 +6,6 @@
   <a 
   href="https://slvrgdps.edgeone.app/?v=9" 
   target="_blank">
-    <img 
-    width="279" 
-    height="89" 
-    alt="PlayOnline" 
-    src="" 
-    />
   </a>
   &nbsp;
   <a 
