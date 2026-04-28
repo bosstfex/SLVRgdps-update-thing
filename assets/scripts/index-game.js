@@ -8058,19 +8058,19 @@ _buildSettingsPopup() {
     const _0x302fca = this.add.bitmapText(xPos, yPos, "bigFont", "Credits", 40).setOrigin(0.5, 0.5);
     this._infoPopup.add(_0x302fca);
     yPos += 55;
-    const _0x22e4c7 = this.add.bitmapText(xPos, yPos, "goldFont", "Made by RobTop Games", 40).setOrigin(0.5, 0.5).setScale(0.6);
+    const _0x22e4c7 = this.add.bitmapText(xPos, yPos, "goldFont", "Owned by:", 40).setOrigin(0.5, 0.5).setScale(0.6);
     this._infoPopup.add(_0x22e4c7);
     yPos += 35;
-    const _0x3cdf70a = this.add.bitmapText(xPos, yPos, "goldFont", "Modded by:", 40).setOrigin(0.5, 0.5).setScale(0.6);
+    const _0x3cdf70a = this.add.bitmapText(xPos, yPos, "goldFont", "GDsilver", 40).setOrigin(0.5, 0.5).setScale(0.6);
     this._infoPopup.add(_0x3cdf70a);
     yPos += 35;
-    const _0x3cdf70b = this.add.bitmapText(xPos, yPos, "goldFont", "AntiMatter, breadbb, bog, aloaf,", 40).setOrigin(0.5, 0.5).setScale(0.6);
+    const _0x3cdf70b = this.add.bitmapText(xPos, yPos, "goldFont", "Modded by:", 40).setOrigin(0.5, 0.5).setScale(0.6);
     this._infoPopup.add(_0x3cdf70b);
     yPos += 35;
-    const _0x3cdf70c = this.add.bitmapText(xPos, yPos, "goldFont", "PinkDev, rohanis0000, arbstro,", 40).setOrigin(0.5, 0.5).setScale(0.6);
+    const _0x3cdf70c = this.add.bitmapText(xPos, yPos, "goldFont", "Evillabraen, Lochacho, Jaibogar", 40).setOrigin(0.5, 0.5).setScale(0.6);
     this._infoPopup.add(_0x3cdf70c);
     yPos += 35;
-    const _0x3cdf70d = this.add.bitmapText(xPos, yPos, "goldFont", "q8j, and Lasokar.", 40).setOrigin(0.5, 0.5).setScale(0.6);
+    const _0x3cdf70d = this.add.bitmapText(xPos, yPos, "goldFont", "and Bosstfex", 40).setOrigin(0.5, 0.5).setScale(0.6);
     this._infoPopup.add(_0x3cdf70d);
     yPos += 35;
     const _0x97b2a9 = this.add.text(xPos, 463, "© 2026 RobTop Games. All rights reserved.", {
@@ -8107,7 +8107,7 @@ _buildSettingsPopup() {
     bounceContainer.add(closeBtn);
     this._expandHitArea(closeBtn, 2);
     this._makeBouncyButton(closeBtn, 0.8, () => this._closeUpdateLogPopup());
-    const title = this.add.bitmapText(0, -124, "bigFont", "BETA (EXPECT BUGS)", 30).setOrigin(0.5, 0.5).setTint(0xff6666);
+    const title = this.add.bitmapText(0, -124, "bigFont", "Welcome!", 30).setOrigin(0.5, 0.5).setTint(0xff6666);
     bounceContainer.add(title);
     const scrollAreaW = 420;
     const scrollAreaH = 230;
@@ -8126,18 +8126,18 @@ _buildSettingsPopup() {
       0xff00ff - pink dev entries
     */
     const updateEntries = [
-      { text: "Update Log", scale: 0.85, font: "goldFont" },
-      { text: "Online levels - BETA", scale: 0.65 },
-      { text: "Practice Mode - BETA", scale: 0.65 },
-      { text: "THESE 2 CAN BE VERY BUGGY.", scale: 0.65, color: 0xff6666 },
-      { text: "UI tweaks.", scale: 0.65 },
-      { text: "Correct Wave hitboxes.", scale: 0.65 },
-      { text: "Move triggers now move orbs and etc.", scale: 0.6 },
+      { text: "To SLVRgdps!", scale: 0.85, font: "goldFont" },
+      { text: "Created by:", scale: 0.65 },
+      { text: "GDsilver", scale: 0.65 },
+      { text: "And developed by", scale: 0.65, color: 0xff6666 },
+      { text: "The SLVRclan team!", scale: 0.65 },
+      { text: "Join the discord today!", scale: 0.65 },
+      { text: " ", scale: 0.6 },
       // { text: "Added slopes. - PinkDev", scale: 0.65, color: 0xff00ff }, (soon)
-      { text: "Bug fixes.", scale: 0.65 },
+      { text: " ", scale: 0.65 },
       // message of the update day (from me :P)
-      { text: "NEXT UPDATE FINNA BE MASSIVE :o", scale: 0.6, color: 0xaaddff },
-      { text: "- rohanis0000", scale: 0.6, color: 0xaaddff },
+      { text: "Saved Levels + Featured Tab Soon!", scale: 0.6, color: 0xaaddff },
+      { text: "- SLVRclan", scale: 0.6, color: 0xaaddff },
     ]; 
     let yPos = 0;
     const lineItems = [];
