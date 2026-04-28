@@ -1,27 +1,21 @@
 <div align="center">
-  <img 
-  width="400" 
-  height="400" 
-  alt="web-dashers logo" 
-  src="https://github.com/user-attachments/assets/1b647556-ef74-47f9-be61-46696c57f04e" 
-  />
-  <h1>Web Dashers</h1>
+  <h1>SLVRgdps</h1>
   <p>
   <strong>modded gd-demo with more features (see below) </strong>
   </p>
   <a 
-  href="https://web-dashers.github.io/" 
+  href="https://slvrgdps.edgeone.app/?v=9" 
   target="_blank">
     <img 
     width="279" 
     height="89" 
     alt="PlayOnline" 
-    src="https://github.com/user-attachments/assets/830fc500-f289-4b96-9686-4fbb5b9af3f5" 
+    src="" 
     />
   </a>
   &nbsp;
   <a 
-  href="https://discord.gg/h6xYNUBFnq" 
+  href="https://discord.gg/comingsoon" 
   target="_blank">
     <img 
     width="279" 
@@ -46,8 +40,8 @@
 - **all objects working** - as the current state of web dash; you may notice a lot of the objects seemed to be bugged and not showing
 - **level editor** - a working level editor with some objects to choose
 
-### come try out the modded version out at:
-**[web-dashers.github.io](https://web-dashers.github.io/)**
+### come try out the modded version out at 
+**Our Discord!**
 
 ---
 > please support us by starring the repo!!
