@@ -20,6 +20,9 @@
     <meta name="twitter:description" content="A mod of geometrydash.com!"/>
     <meta name="twitter:image" content="https://web-dashers.github.io/assets/logo.png"/>
 	
+	<!-- Menu System Styles -->
+	<link rel="stylesheet" href="assets/scripts/menu-system.css">
+
 	<!-- Libraries and stuff -->
 	<script type="module" src="assets/scripts/allObjects.js"></script>
 	<script src="assets/scripts/allLevels.js"></script>
@@ -32,6 +35,8 @@
 	<script>window._gdProxyUrl = "https://gd-proxy.gmdc.workers.dev";</script>
 	<!-- ACTUAL GAME CODE -->
 	<script type="module" crossorigin src="assets/scripts/index-game.js"></script>
+	<!-- Menu System Script -->
+	<script src="assets/scripts/menu-system.js"></script>
 	<!-- - -->
 	<script>
 		new ResizeObserver(() => {
@@ -45,6 +50,18 @@
 </head>
 
 <body>
+	<!-- Menu system will be injected here -->
+	<div id="menu-container-placeholder"></div>
+
+	<script>
+		// Load menu system HTML
+		fetch('assets/scripts/menu-system.html')
+			.then(response => response.text())
+			.then(html => {
+				document.getElementById('menu-container-placeholder').innerHTML = html;
+			})
+			.catch(err => console.error('Failed to load menu system:', err));
+	</script>
 </body>
 
 </html>

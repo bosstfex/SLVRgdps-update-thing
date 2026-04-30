@@ -1,0 +1,36 @@
+<!-- Menu System HTML Structure -->
+<div id="menuContainer">
+	<!-- Search Menu -->
+	<div id="searchMenu" class="menu">
+		<div class="menu-box">
+			<h2 class="menu-title">Search Levels</h2>
+			<input type="text" id="searchInput" class="menu-input" placeholder="Enter Level ID" maxlength="20">
+			<div class="menu-button-group">
+				<button id="searchCancelBtn" class="menu-button menu-button-danger">Cancel</button>
+				<button id="searchLoadBtn" class="menu-button menu-button-primary">Load</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Level Select Menu -->
+	<div id="levelSelectMenu" class="menu">
+		<div class="menu-box">
+			<h2 class="menu-title">Select Level</h2>
+			<div id="levelsList" class="levels-grid"></div>
+			<div class="menu-button-group">
+				<button id="levelSelectCancelBtn" class="menu-button menu-button-danger">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Featured Menu -->
+	<div id="featuredMenu" class="menu">
+		<div class="menu-box">
+			<h2 class="menu-title">Featured Levels</h2>
+			<div id="featuredList" class="featured-list"></div>
+			<div class="menu-button-group">
+				<button id="featuredCancelBtn" class="menu-button menu-button-danger">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

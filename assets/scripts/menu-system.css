@@ -1,0 +1,261 @@
+/* Menu System Styles */
+
+:root {
+	--primary-color: #04FF00;
+	--secondary-color: #00FBFF;
+	--danger-color: #FF4444;
+	--dark-bg: #1a1a2e;
+	--darker-bg: #0a0a0a;
+	--overlay-bg: rgba(0, 0, 0, 0.7);
+}
+
+#menuContainer {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: var(--overlay-bg);
+}
+
+.menu {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu-box {
+	background: var(--dark-bg);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	min-width: 350px;
+}
+
+.menu-title {
+	color: var(--primary-color);
+	text-align: center;
+	margin: 0 0 20px 0;
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.menu-input {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid var(--primary-color);
+	border-radius: 5px;
+	background: var(--darker-bg);
+	color: #ffffff;
+	caret-color: var(--primary-color);
+	font-family: Arial, sans-serif;
+	box-sizing: border-box;
+	transition: border-color 0.3s;
+}
+
+.menu-input:focus {
+	outline: none;
+	border-color: var(--secondary-color);
+	box-shadow: 0 0 10px rgba(0, 251, 255, 0.5);
+}
+
+.menu-button-group {
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.menu-button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	transition: all 0.3s;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.menu-button:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-button:active {
+	transform: scale(0.95);
+}
+
+.menu-button-primary {
+	background: var(--primary-color);
+	color: black;
+}
+
+.menu-button-primary:hover {
+	background: #06ff00;
+	box-shadow: 0 0 15px rgba(4, 255, 0, 0.5);
+}
+
+.menu-button-danger {
+	background: var(--danger-color);
+	color: white;
+}
+
+.menu-button-danger:hover {
+	background: #FF6666;
+	box-shadow: 0 0 15px rgba(255, 68, 68, 0.5);
+}
+
+.menu-button-secondary {
+	background: var(--secondary-color);
+	color: black;
+}
+
+.menu-button-secondary:hover {
+	background: #00FFFF;
+	box-shadow: 0 0 15px rgba(0, 251, 255, 0.5);
+}
+
+/* Search Menu */
+#searchMenu .menu-box {
+	max-width: 400px;
+}
+
+/* Level Select Menu */
+#levelSelectMenu .menu-box {
+	max-width: 600px;
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.levels-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.level-item {
+	padding: 12px;
+	background: var(--darker-bg);
+	border: 2px solid var(--primary-color);
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	transition: all 0.3s;
+}
+
+.level-item:hover {
+	background: var(--primary-color);
+	color: black;
+	transform: translateY(-2px);
+}
+
+/* Featured Menu */
+#featuredMenu .menu-box {
+	max-width: 700px;
+	max-height: 550px;
+	overflow-y: auto;
+}
+
+.featured-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 15px;
+	margin-bottom: 20px;
+}
+
+.featured-item {
+	padding: 15px;
+	background: var(--darker-bg);
+	border-left: 4px solid var(--secondary-color);
+	border-radius: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	transition: all 0.3s;
+}
+
+.featured-item:hover {
+	background: rgba(0, 251, 255, 0.1);
+	transform: translateX(5px);
+}
+
+.featured-item-title {
+	color: var(--secondary-color);
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.featured-item-description {
+	color: #cccccc;
+	font-size: 14px;
+}
+
+/* Scrollbar styling */
+.menu-box::-webkit-scrollbar {
+	width: 8px;
+}
+
+.menu-box::-webkit-scrollbar-track {
+	background: var(--darker-bg);
+	border-radius: 10px;
+}
+
+.menu-box::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+	border-radius: 10px;
+}
+
+.menu-box::-webkit-scrollbar-thumb:hover {
+	background: var(--secondary-color);
+}
+
+/* Animations */
+@keyframes slideIn {
+	from {
+		transform: translate(-50%, -50%) scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 1;
+	}
+}
+
+.menu.active .menu-box {
+	animation: slideIn 0.3s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	.menu-box {
+		min-width: 90vw;
+		margin: 0 5vw;
+	}
+
+	.levels-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.menu-button-group {
+		flex-direction: column;
+	}
+
+	.menu-button {
+		width: 100%;
+	}
+}
